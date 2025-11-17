@@ -552,16 +552,19 @@ button:active {
     visibility: hidden;
     content: "The best smart brand in 98";
     position: absolute;
-    width: 110px;
-    height: 40px;
+    width: 130px;
+    height: 47px;
     background-color: #2d7af7;
     color: white;
     border-radius: 20px;
-    top: -53px;
+    top: -59px;
     right: 5px;
     /* line-height: 40px; */
     text-align: center;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 1s 0.1s linear;
 }
 
@@ -570,16 +573,19 @@ button:active {
     visibility: hidden;
     content: "The best smart brand in 99";
     position: absolute;
-    width: 110px;
-    height: 40px;
+    width: 130px;
+    height: 47px;
     background-color: #2d7af7;
     color: white;
     border-radius: 20px;
-    top: -53px;
+    top: -59px;
     right: 5px;
     /* line-height: 40px; */
     text-align: center;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 1s 0.1s linear;
 }
 
@@ -721,7 +727,7 @@ button:active {
 .social-medias-title {
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     text-align: right;
 }
 
@@ -730,7 +736,7 @@ button:active {
     align-items: center;
     justify-content: right;
     gap: 15px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 .developerNameBox {
