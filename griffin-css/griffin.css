@@ -1,0 +1,1043 @@
+/*     padding: 30px 50px 10px 50px;
+ */
+
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* overflow-x: hidden; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-break: break-word;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.5s 0.1s linear, box-shadow 0.1s 0s linear;
+
+}
+
+button:active {
+    /* background-color: red; */
+    box-shadow: 1px 1px 10px 10px aqua;
+}
+
+.header {
+    /* width: 100%; */
+    height: 70PX;
+    background-color: #0a1a4f;
+    padding: 30px 50px 10px 50px;
+
+    /* text-align: center; */
+    /* line-height: 70px; */
+}
+
+.headerMainContent {
+    padding: 30px 50px 30px 50px;
+    /* width: 100%; */
+    height: 40PX;
+    line-height: 40px;
+    /* padding-bottom: 20px; */
+    background-color: #0a1a4f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.logo-wraper {
+    color: aqua;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.logo-wraper img {
+    width: 100%;
+    height: 100%;
+}
+
+.menoes-container {
+    width: 50%;
+}
+
+.logo-burgermeno {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.logo-burgermeno img {
+    width: 100%;
+    height: 100%;
+}
+
+.burgermenoContainerDiv {
+    display: none;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; */
+    width: 30px;
+    height: 20px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+
+.line1 {
+    width: 28px;
+    height: 2px;
+    background-color: #0145a8;
+    transition: all 1s 0.1s linear;
+}
+
+.line2 {
+    width: 28px;
+    height: 2px;
+    background-color: #0145a8;
+    transition: all 1s 0s linear;
+}
+
+.line3 {
+    width: 28px;
+    height: 2px;
+    background-color: #0145a8;
+    transition: all 1s 0.1s linear;
+}
+
+.menoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.meno-logo-burger {
+    display: none;
+}
+
+.menoes li a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menoes li {
+    position: relative;
+}
+
+.menoes li::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    background-color: aqua;
+    left: 50%;
+    transform: translateX(-50%) scale(0%);
+    top: 31px;
+    transition: all 0.2s 0.1s ease;
+}
+
+.menoes li:hover::after {
+    transform: translateX(-50%) scale(1);
+}
+
+/* section1 styles */
+.section1 {
+    width: 100%;
+    padding: 30px 50px 0px 50px;
+    background-color: #0145a8;
+    /* height: 820px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* position: relative; */
+}
+
+.section1-step1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.section1-info {
+    width: 50%;
+    animation-name: section1-info-shine;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+}
+
+.section1-h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.section1-p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #BFD5FF;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.seeProduct-btn-div {
+    width: 250px;
+    margin: 0px auto;
+
+}
+
+.seeProduct-btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #2d7af7;
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    animation-name: seeproduct-btn-div-shine;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    /* transition: all 0.5s 0.1s linear,box-shadow 0.1s 0s linear; */
+    /* transition: ; */
+}
+
+.seeProduct-btn:hover {
+    transform: scale(1.1);
+}
+
+.section1-img {
+    width: 40%;
+}
+
+.headerIMG {
+    width: 90%;
+    height: 90%;
+    animation-name: headerIMGshine;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+/* section1 step2 */
+.section1-step2 {
+    /* width: 700px; */
+    margin: 70px auto 20px auto;
+}
+
+.section1-step2-h2 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section2-step2-imgbox {
+    width: 60%;
+    /* height: 300px; */
+    /* position: absolute; */
+    /* bottom: -60px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    margin: 10px auto 10px auto;
+    transform: translateY(50px);
+}
+
+.section-1-step2-img {
+    width: 100%;
+    border-radius: 20px;
+    animation-name: section-1-step2-img-shine;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-delay: 0.4s;
+
+}
+
+/* section2 */
+.section2-step1 {
+    width: 600px;
+    margin: 150px auto 20px auto;
+}
+
+.section2-h2 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 40px;
+    /* width: 400px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section2-p {
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 20px;
+
+}
+
+.AboutGriffinApp-btnbox {
+    /* width: 600px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.AboutGriffinApp-btn {
+    width: 250px;
+    height: 40px;
+    font-weight: 500;
+    background-color: #0145a8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    /* transition: all 0.5s 0.1s linear; */
+}
+
+.AboutGriffinApp-btn:hover {
+    transform: scale(1.1);
+}
+
+.section3 {
+    width: 90%;
+    background-color: #0145a8;
+    margin: 30px auto 10px auto;
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+}
+
+.about-productsH3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 3px #2d7af7;
+    margin-bottom: 30px;
+}
+
+.product-field-h4 {
+    font-size: 25px;
+    font-weight: 600;
+    /* color: #FFFFFF; */
+}
+
+.product-field-column2 {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.Products-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    /* height: 500px; */
+}
+
+.product-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 20px 20px 20px 20px;
+    width: 340px;
+    height: 220px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(5px 5px 10px #2d7af7);
+    /* border: 1px solid #2d7af7; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 129px 5px #2d7af7;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s 0.1s linear;
+}
+
+.product-field::after {
+    content: "see about?";
+    width: 90px;
+    height: 25px;
+    position: absolute;
+    bottom: -34px;
+    left: 36px;
+    background-color: #FFFF;
+    border-radius: 0px 999px;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s 0.1s linear;
+}
+
+.product-field:hover {
+    box-shadow: 2px 2px 10px 10px #2d7af7;
+    transform: translateY(-10px);
+}
+
+.product-field:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.product-field-column1 {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-field-column1::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #0145a8;
+    left: 45px;
+    top: 2px;
+
+}
+
+.product-field-iconbox {
+    font-size: 16px;
+}
+
+/* section 4 */
+
+.section4 {
+    width: 90%;
+    margin: 30px auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section4-info {
+    width: 50%;
+}
+
+.section4-info-p {
+    word-spacing: 2px;
+    padding: 10px;
+    margin: 0px;
+
+    line-height: 1.6;
+    /* font-size: 20px; */
+    /* font-weight: 600; */
+}
+
+.section4-info-btnbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4-info-btn {
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    font-weight: 500;
+    background-color: #0145a8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    /* transition: all 1s 0.1s linear; */
+}
+
+.section4-info-btn:hover {
+    /* box-shadow: 1px 1px 10px 10px aqua; */
+    transform: scale(1.1);
+}
+
+.section4-img {
+    width: 40%;
+    /* height: 400px; */
+}
+
+.section4-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* section 5 */
+/* .section5 {} */
+.section6-row1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px auto 50px auto;
+    position: relative;
+}
+
+.section6-row1::after {
+    content: "";
+    background-color: #2d7af7;
+    position: absolute;
+    /* box-shadow: 1px 1px 10px 6px #0145a8; */
+    box-shadow: 0px 0px 30px 10px #2d7af7;
+    width: 85%;
+    /* height: 1px; */
+    top: 200px;
+
+}
+
+.section6-grifin-honors-99,
+.section6-grifin-honors-98 {
+    position: relative;
+    cursor: grab;
+    width: 150px;
+    height: 200px;
+    transition: all 1s 0.1s linear;
+}
+
+.section6-grifin-honors-99 img,
+.section6-grifin-honors-98 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section6-grifin-honors-99:hover {
+    transform: translateY(-15px);
+}
+
+.section6-grifin-honors-98:hover {
+    transform: translateY(-15px);
+}
+
+.section6-grifin-honors-98::after {
+    opacity: 0;
+    visibility: hidden;
+    content: "The best smart brand in 98";
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    background-color: #2d7af7;
+    color: white;
+    border-radius: 20px;
+    top: -53px;
+    right: 5px;
+    /* line-height: 40px; */
+    text-align: center;
+    padding: 5px;
+    transition: all 1s 0.1s linear;
+}
+
+.section6-grifin-honors-99::after {
+    opacity: 0;
+    visibility: hidden;
+    content: "The best smart brand in 99";
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    background-color: #2d7af7;
+    color: white;
+    border-radius: 20px;
+    top: -53px;
+    right: 5px;
+    /* line-height: 40px; */
+    text-align: center;
+    padding: 5px;
+    transition: all 1s 0.1s linear;
+}
+
+.section6-grifin-honors-99:hover::after,
+.section6-grifin-honors-98:hover::after {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.section6-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(-30px);
+}
+
+/* section 6 */
+.section5 {
+    width: 90%;
+    margin: 30px auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section5-info {
+    width: 40%;
+}
+
+.section5-info-p {
+    word-spacing: 2px;
+    padding: 10px;
+    margin: 0px;
+
+    line-height: 1.6;
+    /* font-size: 20px; */
+    /* font-weight: 600; */
+}
+
+
+
+
+.section5-img {
+    width: 40%;
+    height: 440px;
+}
+
+.section5-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.section5-info-uls-griffin-defrences {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.section5-info-uls-griffin-defrences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section5-info-uls-griffin-defrences-li {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+
+
+.footer {
+    /* width: 100%; */
+    /* height: 500px; */
+    background-color: #0145a8;
+    border-radius: 50px 50px 0px 0px;
+    padding: 50px 300px 20px 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footerRow1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerColumn1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    /* justify-content: ; */
+}
+
+.footerColumn1-h3 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    /* text-align: center; */
+
+}
+
+.footerColumn1-h6 {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.footerColumn2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 20px;
+}
+
+.social-icon {
+    cursor: pointer;
+    transition: all 0.4s 0.1s linear;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-medias-title {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: right;
+}
+
+.social-medias-icons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.developerNameBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.developerNameBox::after {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #2d7af7;
+    position: absolute;
+    top: -10px;
+    box-shadow: 0px 0px 30px 10px #2d7af7;
+}
+
+.footerShape1 {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background-color: #2d7af7;
+    position: absolute;
+    left: -31px;
+    top: 79px;
+    box-shadow: 1px 1px 11px 9px #2d7af7;
+    animation-name: footerShape1-animation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+.footerShape2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background-color: #2d7af7;
+    position: absolute;
+    box-shadow: 1px 1px 11px 9px #2d7af7;
+    right: -25px;
+    bottom: -40px;
+    animation-name: footerShape2-animation;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+
+
+.developerName {
+    color: #FFFFFF;
+    /* text-align: right; */
+}
+
+/* .footerColumn3  */
+/* keyFrames */
+@keyframes section1-info-shine {
+    0% {
+        transform: translate(-120%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes headerIMGshine {
+    0% {
+        /* transform: rotateX(90deg); */
+        transform: scale(0);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        /* transform: rotateX(0deg); */
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+@keyframes seeproduct-btn-div-shine {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes section-1-step2-img-shine {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    25% {
+        opacity: 0.25;
+        transform: translateY(75px);
+
+    }
+
+    50% {
+        opacity: 0.50;
+        transform: translateY(50px);
+
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: translateY(25px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+@keyframes footerShape1-animation {
+    0% {
+        transform: scale(1) translateY(0px);
+    }
+
+    100% {
+        transform: scale(1.1) translateY(-10px);
+
+    }
+}
+
+@keyframes footerShape2-animation {
+    0% {
+        transform: scale(1) translateY(0px);
+        box-shadow: 1px 1px 6px 9px #2d7af7;
+    }
+
+    100% {
+        transform: scale(1.1) translateY(-10px);
+        box-shadow: 1px 1px 20px 9px #2d7af7;
+
+    }
+}
+
+@keyframes logo-burgermeno-shine {
+    0% {
+        transform: translateX(175px) scale(0);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes logo-burgermeno-fall {
+    0% {
+        transform: translateX(0px) scale(1);
+    }
+
+    100% {
+        transform: translateX(175px) scale(0);
+    }
+
+}
+
+/* responsive */
+/* header */
+@media (max-width : 1288px) {
+    .product-field {
+        width: 45%;
+    }
+
+}
+
+@media (max-width : 1070px) {
+    .footer {
+        padding: 50px 150px 20px 150px;
+    }
+}
+
+@media (max-width : 1033px) {
+    .product-field {
+        width: 100%;
+    }
+}
+
+@media (max-width : 750px) {
+    .section5 {
+        flex-direction: column;
+    }
+
+    .section5-img,
+    .section5-info {
+        width: 90%;
+    }
+
+    .section1-h1 {
+        font-size: 35px;
+
+    }
+
+    .logo-burgermeno {
+        display: block;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .logo-burgermeno-shineAnimate {
+        animation-name: logo-burgermeno-shine;
+        animation-duration: 1s;
+        /* animation-delay: 1s; */
+        animation-timing-function: linear;
+    }
+
+    .logo-burgermeno-fallAnimate {
+        animation-name: logo-burgermeno-fall;
+        animation-duration: 1s;
+        /* animation-delay: 1s; */
+        animation-timing-function: linear;
+
+    }
+
+    .burgermenoContainerDiv {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        visibility: visible;
+    }
+
+    .menoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menoes li {
+        font-size: 25px;
+    }
+
+
+    .header .menoes-container {
+        width: 250px;
+        position: fixed;
+        right: -250px;
+        top: 0px;
+        bottom: 0px;
+        background-color: #0a1a4f;
+        padding-top: 100px;
+        transition: all 1s 0.1s linear;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .footer {
+        padding: 50px 100px 20px 100px;
+    }
+
+
+}
+
+@media (max-width : 657px) {
+    .section1-step1 {
+        flex-direction: column-reverse;
+
+    }
+
+    .section2-step1 {
+        width: 400px;
+    }
+
+    .seeProduct-btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section1-info .section1-h1,
+    .section1-info .section1-p {
+        text-align: center;
+    }
+
+    .section3 .Products-fields {
+        justify-content: center;
+    }
+
+    @media (max-width : 600px) {
+        .footer {
+            padding: 30px;
+        }
+    }
+
+
+
+}
