@@ -1,0 +1,235 @@
+/* normalize */
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* overflow-x: hidden; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-break: break-word;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.5s 0.1s linear, box-shadow 0.1s 0s linear;
+
+}
+
+button:active {
+    /* background-color: red; */
+    box-shadow: 1px 1px 10px 10px aqua;
+}
+
+
+
+
+/* main */
+
+
+
+.footer {
+    /* width: 100%; */
+    /* height: 500px; */
+    background-color: #0145a8;
+    border-radius: 50px 50px 0px 0px;
+    padding: 50px 300px 20px 300px;
+    position: relative;
+    overflow: hidden;
+    direction: ltr;
+}
+
+.footerRow1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerColumn1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    /* justify-content: ; */
+}
+
+.footerColumn1-h3 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    /* text-align: center; */
+
+}
+
+.footerColumn1-h6 {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.footerColumn2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 20px;
+}
+
+.social-icon {
+    cursor: pointer;
+    transition: all 0.4s 0.1s linear;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-medias-title {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+}
+
+.social-medias-icons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+    /* padding-right: 20px; */
+}
+
+.developerNameBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.developerNameBox::after {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #2d7af7;
+    position: absolute;
+    top: -10px;
+    box-shadow: 0px 0px 30px 10px #2d7af7;
+}
+
+.footerShape1 {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background-color: #2d7af7;
+    position: absolute;
+    left: -31px;
+    top: 79px;
+    box-shadow: 1px 1px 11px 9px #2d7af7;
+    animation-name: footerShape1-animation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+.footerShape2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background-color: #2d7af7;
+    position: absolute;
+    box-shadow: 1px 1px 11px 9px #2d7af7;
+    right: -25px;
+    bottom: -40px;
+    animation-name: footerShape2-animation;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+
+
+.developerName {
+    color: #FFFFFF;
+    /* text-align: right; */
+}
+
+
+/* key frames */
+@keyframes footerShape1-animation {
+    0% {
+        transform: scale(1) translateY(0px);
+    }
+
+    100% {
+        transform: scale(1.1) translateY(-10px);
+
+    }
+}
+
+@keyframes footerShape2-animation {
+    0% {
+        transform: scale(1) translateY(0px);
+        box-shadow: 1px 1px 6px 9px #2d7af7;
+    }
+
+    100% {
+        transform: scale(1.1) translateY(-10px);
+        box-shadow: 1px 1px 20px 9px #2d7af7;
+
+    }
+}
+
+/* madias */
+
+@media (max-width : 1070px) {
+    /* for footer */
+
+    .footer {
+        padding: 50px 150px 20px 150px;
+    }
+}
+
+@media (max-width : 768px) {
+    .footerRow1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerColumn1 {
+        width: 100%;
+    }
+
+    .footerColumn2 {
+        align-items: center;
+    }
+}
+
+/* @media (max-width : 1070px) {
+    .footer {
+        padding: 30px;
+    }
+} */

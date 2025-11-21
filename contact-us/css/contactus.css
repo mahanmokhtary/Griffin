@@ -1,0 +1,150 @@
+body {
+  /* min-height: 1200px; */
+  background: rgb(25, 35, 40);
+  /* //background: #e6e6e6; */
+  overflow-x: hidden;
+}
+
+/* .container {
+  background-color:black;
+  width: 100%;
+} */
+
+@keyframes canv {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+
+}
+
+#cvs {
+  animation-name: canv;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+
+/* main css */
+
+body {
+  margin: 0px;
+  pad: 0px;
+  background-color: #050d29;
+}
+
+#container {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  background-color: #050d29;
+  height: 600px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.CU-section1 {
+  width: 60%;
+  height: 500px;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  box-shadow: 0px 0px 26px -10px aqua;
+}
+
+.CU-section1-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.CU-section1-call {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.CU-section1-call a {
+  color: white;
+  text-decoration: none;
+}
+
+.CU-section1-call1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 100px;
+}
+
+.CU-section1-call2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 100px;
+}
+
+.CU-section1-call3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 100px;
+}
+
+.CU-section1-social-medias {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CU-section1-social-medias-whatsApp,
+.CU-section1-social-medias-instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CU-section1-address {
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+}
+
+h1 {
+  background: transparent;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+small {
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (max-width:768px) {
+  .CU-section1 {
+    width: 80%;
+    height: 520px;
+  }
+  .CU-section1-call1,.CU-section1-call2,.CU-section1-call3 {
+    gap: 60px;
+  }
+}

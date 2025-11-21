@@ -35,135 +35,6 @@ button:active {
     box-shadow: 1px 1px 10px 10px aqua;
 }
 
-.header {
-    /* width: 100%; */
-    height: 70PX;
-    background-color: #0a1a4f;
-    padding: 30px 50px 10px 50px;
-
-    /* text-align: center; */
-    /* line-height: 70px; */
-}
-
-.headerMainContent {
-    padding: 30px 50px 30px 50px;
-    /* width: 100%; */
-    height: 40PX;
-    line-height: 40px;
-    /* padding-bottom: 20px; */
-    background-color: #0a1a4f;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 2;
-    border-radius: 0px 0px 10px 10px;
-
-}
-
-.logo-wraper {
-    color: aqua;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-}
-
-.logo-wraper img {
-    width: 100%;
-    height: 100%;
-}
-
-.menoes-container {
-    width: 50%;
-}
-
-.logo-burgermeno {
-    width: 100px;
-    height: 100px;
-    display: none;
-}
-
-.logo-burgermeno img {
-    width: 100%;
-    height: 100%;
-}
-
-.burgermenoContainerDiv {
-    display: none;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between; */
-    width: 30px;
-    height: 20px;
-    position: relative;
-    right: 0px;
-    top: 0px;
-    cursor: pointer;
-}
-
-
-.line1 {
-    width: 28px;
-    height: 2px;
-    background-color: #0145a8;
-    transition: all 1s 0.1s linear;
-}
-
-.line2 {
-    width: 28px;
-    height: 2px;
-    background-color: #0145a8;
-    transition: all 1s 0s linear;
-}
-
-.line3 {
-    width: 28px;
-    height: 2px;
-    background-color: #0145a8;
-    transition: all 1s 0.1s linear;
-}
-
-.menoes {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-.meno-logo-burger {
-    display: none;
-}
-
-.menoes li a {
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.menoes li {
-    position: relative;
-}
-
-.menoes li::after {
-    content: "";
-    width: 80%;
-    height: 2px;
-    position: absolute;
-    background-color: aqua;
-    left: 50%;
-    transform: translateX(-50%) scale(0%);
-    top: 31px;
-    transition: all 0.2s 0.1s ease;
-}
-
-.menoes li:hover::after {
-    transform: translateX(-50%) scale(1);
-}
 
 /* section1 styles */
 .section1 {
@@ -665,141 +536,6 @@ button:active {
 /* footer */
 
 
-.footer {
-    /* width: 100%; */
-    /* height: 500px; */
-    background-color: #0145a8;
-    border-radius: 50px 50px 0px 0px;
-    padding: 50px 300px 20px 300px;
-    position: relative;
-    overflow: hidden;
-}
-
-.footerRow1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footerColumn1 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 20px;
-    position: relative;
-    z-index: 1;
-    /* justify-content: ; */
-}
-
-.footerColumn1-h3 {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 700;
-    /* text-align: center; */
-
-}
-
-.footerColumn1-h6 {
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 20px;
-    /* text-align: center; */
-}
-
-.footerColumn2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    gap: 20px;
-}
-
-.social-icon {
-    cursor: pointer;
-    transition: all 0.4s 0.1s linear;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-}
-
-.social-medias-title {
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: right;
-}
-
-.social-medias-icons {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 15px;
-    /* padding-right: 20px; */
-}
-
-.developerNameBox {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    position: relative;
-
-}
-
-.developerNameBox::after {
-    content: "";
-    width: 70%;
-    height: 1px;
-    background-color: #2d7af7;
-    position: absolute;
-    top: -10px;
-    box-shadow: 0px 0px 30px 10px #2d7af7;
-}
-
-.footerShape1 {
-    width: 140px;
-    height: 140px;
-    border-radius: 100%;
-    background-color: #2d7af7;
-    position: absolute;
-    left: -31px;
-    top: 79px;
-    box-shadow: 1px 1px 11px 9px #2d7af7;
-    animation-name: footerShape1-animation;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
-}
-
-.footerShape2 {
-    width: 140px;
-    height: 140px;
-    border-radius: 100%;
-    background-color: #2d7af7;
-    position: absolute;
-    box-shadow: 1px 1px 11px 9px #2d7af7;
-    right: -25px;
-    bottom: -40px;
-    animation-name: footerShape2-animation;
-    animation-duration: 3s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
-}
-
-
-
-.developerName {
-    color: #FFFFFF;
-    /* text-align: right; */
-}
 
 /* .footerColumn3  */
 /* keyFrames */
@@ -875,132 +611,39 @@ button:active {
     }
 }
 
-@keyframes footerShape1-animation {
-    0% {
-        transform: scale(1) translateY(0px);
-    }
 
-    100% {
-        transform: scale(1.1) translateY(-10px);
 
-    }
-}
 
-@keyframes footerShape2-animation {
-    0% {
-        transform: scale(1) translateY(0px);
-        box-shadow: 1px 1px 6px 9px #2d7af7;
-    }
 
-    100% {
-        transform: scale(1.1) translateY(-10px);
-        box-shadow: 1px 1px 20px 9px #2d7af7;
 
-    }
-}
-
-@keyframes logo-burgermeno-shine {
-    0% {
-        transform: translateX(175px) scale(0);
-    }
-
-    100% {
-        transform: translateX(0px) scale(1);
-    }
-}
-
-@keyframes logo-burgermeno-fall {
-    0% {
-        transform: translateX(0px) scale(1);
-    }
-
-    100% {
-        transform: translateX(175px) scale(0);
-    }
-
-}
 
 /* responsive */
 /* header */
 @media (max-width : 1288px) {
+    /* for section3 */
     .product-field {
         width: 45%;
     }
 
 }
 
-@media (max-width : 1070px) {
-    .footer {
-        padding: 50px 150px 20px 150px;
-    }
-}
+
+
 
 @media (max-width : 1033px) {
+    /* for section2 */
     .section2-step2-imgbox {
         width: 70%;
     }
-
+    /* for section3 */
     .product-field {
         width: 100%;
     }
 }
-@media (max-width : 768px) {
-        .logo-burgermeno {
-        display: block;
-        margin-top: 50px;
-        margin-right: auto;
-        margin-left: auto;
 
-    }
-
-    .logo-burgermeno-shineAnimate {
-        animation-name: logo-burgermeno-shine;
-        animation-duration: 1s;
-        /* animation-delay: 1s; */
-        animation-timing-function: linear;
-    }
-
-    .logo-burgermeno-fallAnimate {
-        animation-name: logo-burgermeno-fall;
-        animation-duration: 1s;
-        /* animation-delay: 1s; */
-        animation-timing-function: linear;
-
-    }
-
-    .burgermenoContainerDiv {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        visibility: visible;
-    }
-
-    .menoes {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .menoes li {
-        font-size: 25px;
-    }
-
-
-    .header .menoes-container {
-        width: 250px;
-        position: fixed;
-        right: -250px;
-        top: 0px;
-        bottom: 0px;
-        background-color: #0a1a4f;
-        padding-top: 100px;
-        transition: all 1s 0.1s linear;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-}
 
 @media (max-width : 750px) {
+    /* for section 5 */
     .section5 {
         flex-direction: column;
     }
@@ -1009,22 +652,21 @@ button:active {
     .section5-info {
         width: 90%;
     }
-
+    /* for section 1 */
     .section1-h1 {
         font-size: 35px;
 
     }
 
 
+    /* for footer */
 
-    .footer {
-        padding: 50px 100px 20px 100px;
-    }
 
 
 }
 
 @media (max-width : 657px) {
+    /* for section 4 */
     .section4 {
         flex-direction: column-reverse;
     }
@@ -1038,55 +680,50 @@ button:active {
         width: 100%;
         height: 360px;
     }
-
+    /* for section 1 */
     .section1-step1 {
         flex-direction: column-reverse;
 
     }
-
+    /* for section 2 */
     .section2-step1 {
         width: 350px;
     }
-
+    /* for section 1 */
+    .section1 {
+        padding: 30px 20px 0px 20px;
+    }
+    .section1-info {
+        width: 100%;
+    }
     .seeProduct-btn-box {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .section1 {
-        padding: 30px 20px 0px 20px;
-    }
-
-    .section1-info {
-        width: 100%;
-    }
-
     .section1-info .section1-h1,
     .section1-info .section1-p {
         text-align: center;
     }
 
+
+    /* for section 3 */
     .section3 .Products-fields {
         justify-content: center;
     }
 
-
-
-
 }
 
 @media (max-width : 600px) {
+    /* for section 2 */
     .section2-step2-imgbox {
         width: 90%;
     }
-
-    .footer {
-        padding: 30px;
-    }
+    /* for footer */
 }
 
 @media (max-width : 440px) {
+    /* for section 3 */
     .secttion3 {
         padding: 30px 20px 30px 20px;
     }
