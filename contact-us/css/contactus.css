@@ -142,7 +142,7 @@ small {
 @media (max-width:768px) {
   .CU-section1 {
     width: 80%;
-    height: 520px;
+    height: 540px;
   }
   .CU-section1-call1,.CU-section1-call2,.CU-section1-call3 {
     gap: 60px;
