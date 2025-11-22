@@ -2,7 +2,6 @@ body {
   /* min-height: 1200px; */
   background: rgb(25, 35, 40);
   /* //background: #e6e6e6; */
-  overflow-x: hidden;
 }
 
 /* .container {
@@ -44,9 +43,10 @@ body {
   font-family: 'Roboto Slab', serif;
   color: white;
   background-color: #050d29;
-  height: 600px;
+  height: 620px;
+  /* margin-top: 100px; */
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .CU-section1 {
@@ -142,7 +142,7 @@ small {
 @media (max-width:768px) {
   .CU-section1 {
     width: 80%;
-    height: 540px;
+    height: 550px;
   }
   .CU-section1-call1,.CU-section1-call2,.CU-section1-call3 {
     gap: 60px;
