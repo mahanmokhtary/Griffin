@@ -675,6 +675,10 @@ button:active {
 
 @media (max-width : 750px) {
     /* for section 5 */
+    
+    .section1-step2-h2 {
+        width: 70%;
+    }
     .section5 {
         flex-direction: column;
     }
