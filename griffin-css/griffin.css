@@ -40,7 +40,8 @@ button:active {
 .section1 {
     width: 100%;
     padding: 30px 50px 0px 50px;
-    background-color: #0145a8;
+    /* background-color: #0145a8; */
+    background-image: linear-gradient(black,white);
     /* height: 820px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
