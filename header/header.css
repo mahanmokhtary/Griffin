@@ -5,11 +5,15 @@ body {
     margin: 0px;
     /* overflow-x: hidden; */
 }
-
+@font-face {
+    font-family: 'vazir';
+    src: url('/fonts/Vazir-Thin.ttf') format("ttf"),url('/fonts/Vazir.woff') format("woff");
+}
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'vazir',vazir;
 }
 
 p {
@@ -27,6 +31,7 @@ button {
     transition: all 0.5s 0.1s linear, box-shadow 0.1s 0s linear;
 
 }
+
 
 button:active {
     /* background-color: red; */
@@ -53,7 +58,7 @@ button:active {
 .headerMainContent {
     padding: 30px 50px 30px 50px;
     /* width: 100%; */
-    height: 40PX;
+    height: 65PX;
     line-height: 40px;
     /* padding-bottom: 20px; */
     /* background-color: #0a1a4f; */
@@ -73,7 +78,7 @@ button:active {
 .logo-wraper {
     color: aqua;
     width: 150px;
-    height: 50px;
+    height: 65px;
     line-height: 50px;
     text-align: center;
 }
@@ -163,7 +168,7 @@ button:active {
     background-color: aqua;
     left: 50%;
     transform: translateX(-50%) scale(0%);
-    top: 31px;
+    top: 33px;
     transition: all 0.2s 0.1s ease;
 }
 
