@@ -39,9 +39,9 @@ button:active {
 /* section1 styles */
 .section1 {
     width: 100%;
-    padding: 30px 50px 0px 50px;
+    padding: 0px 0px 0px 0px;
     /* background-color: #0145a8; */
-    background-image: linear-gradient(black,white);
+    background-image: linear-gradient(black 40%,white);
     /* height: 820px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -49,9 +49,19 @@ button:active {
 }
 
 .section1-step1 {
+    background-image: url(/Img/ax.jpg);
+    background-size: cover;
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    padding: 20px;
+}
+.section1-step1-bg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 
@@ -91,7 +101,8 @@ button:active {
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
-    background-color: #2d7af7;
+    background-image: linear-gradient(90deg,#13befe,#9c33ff);
+    /* background-color: #2d7af7; */
     border: none;
     width: 250px;
     height: 40px;
@@ -110,11 +121,12 @@ button:active {
 }
 
 .section1-img {
-    width: 40%;
+    width: 70%;
+    /* transform: translateX(50px); */
 }
 
 .headerIMG {
-    width: 90%;
+    width: 100%;
     height: 90%;
     animation-name: headerIMGshine;
     animation-duration: 1.5s;
@@ -135,6 +147,8 @@ button:active {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
+    width: 50%;
+    margin: 10px auto;
 }
 
 .section2-step2-imgbox {
@@ -253,7 +267,7 @@ button:active {
     justify-content: space-between;
     gap: 25px;
     padding: 20px 20px 20px 20px;
-    width: 340px;
+    width: 360px;
     height: 220px;
     background-color: #FFFFFF;
     filter: drop-shadow(5px 5px 10px #2d7af7);
@@ -263,6 +277,10 @@ button:active {
     cursor: pointer;
     position: relative;
     transition: all 0.5s 0.1s linear;
+}
+.product-field-p {
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .product-field::after {
@@ -540,6 +558,8 @@ button:active {
 
 /* .footerColumn3  */
 /* keyFrames */
+
+
 @keyframes section1-info-shine {
     0% {
         transform: translate(-120%);
@@ -549,6 +569,16 @@ button:active {
         transform: translate(0);
     }
 }
+/* for rtl */
+/* @keyframes section1-info-shine {
+    0% {
+        transform: translate(120%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+} */
 
 @keyframes headerIMGshine {
     0% {
@@ -692,7 +722,7 @@ button:active {
     }
     /* for section 1 */
     .section1 {
-        padding: 30px 20px 0px 20px;
+        padding: 30px 0px 0px 0px;
     }
     .section1-info {
         width: 100%;
