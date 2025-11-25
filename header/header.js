@@ -13,7 +13,7 @@ burgermenoContainerDiv.addEventListener('click', () => {
         line2.style.transform = "scale(0)"
         // line2.style.visibility = "hidden"
         line3.style.transform = "rotateZ(-45deg) translateY(-11px) translateX(3px)"
-        line1.style.backgroundColor = "aqua"
+        line1.style.backgroundColor = "#13befe"
         logoBurgermeno.classList.add('logo-burgermeno-shineAnimate')
         logoBurgermeno.classList.remove('logo-burgermeno-fallAnimate')
     } else {
@@ -23,7 +23,7 @@ burgermenoContainerDiv.addEventListener('click', () => {
         // line2.style.transition = "all 1s 0.1s linear"
         line3.style.transform = "rotateZ(0deg) translateY(0px)"
         menoesContainer.style.right = '-250px'
-        line1.style.backgroundColor = "#0145a8"
+        line1.style.backgroundColor = "#9c33ff"
         logoBurgermeno.classList.add('logo-burgermeno-fallAnimate')
         logoBurgermeno.classList.remove('logo-burgermeno-shineAnimate')
     }
