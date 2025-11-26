@@ -176,12 +176,15 @@ button:active {
 .section-1-step2-img {
     width: 100%;
     border-radius: 20px;
+}
+
+.section-1-step2-img-animation {
     animation-name: section-1-step2-img-shine;
     animation-timing-function: linear;
     animation-duration: 2.5s;
-    animation-delay: 0.4s;
-
+    animation-delay: 0s;
 }
+
 
 /* section2 */
 .section-2 {
@@ -210,7 +213,7 @@ button:active {
 
 }
 
-.section1-step2-btnbox {
+.section2-step2-btnbox {
     /* width: 600px; */
     display: flex;
     align-items: center;
@@ -218,7 +221,7 @@ button:active {
     margin-top: 30px;
 }
 
-.section1-step2-btn {
+.section2-step2-btn {
     width: 250px;
     height: 40px;
     font-weight: 500;
@@ -232,7 +235,7 @@ button:active {
     /* transition: all 0.5s 0.1s linear; */
 }
 
-.section1-step2-btn:hover {
+.section2-step2-btn:hover {
     transform: scale(1.1);
 }
 
@@ -740,11 +743,16 @@ button:active {
 
 /* responsive */
 /* header */
-@media (max-width : 1288px) {
+@media (max-width : 1312px) {
 
     /* for section3 */
-    .product-field {
+    .product-field-ltr {
         width: 45%;
+    }
+
+    .product-field-rtl {
+        width: 45%;
+
     }
 
 }
