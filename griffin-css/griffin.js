@@ -1,6 +1,8 @@
-window.addEventListener('load',setAnimations)
 function setAnimations () {
     const observer = new IntersectionObserver((entries) => {
+        setTimeout(() => {
+            
+        }, 1000);
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 if (entry.target.classList.contains("section-1-step2-img")) {
@@ -9,5 +11,8 @@ function setAnimations () {
             }
         })
     })
-    observer.observe(document.querySelector(".section-1-step2-img"))
+    setTimeout(() => {
+        observer.observe(document.querySelector(".section-1-step2-img"))
+    }, 200);
 }
+    window.addEventListener('load',setAnimations)

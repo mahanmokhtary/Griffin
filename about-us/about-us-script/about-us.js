@@ -1,7 +1,7 @@
-window.addEventListener('load',setAnimations)
-function setAnimations () {
+window.addEventListener('load', setAnimations)
+function setAnimations() {
     const observer = new IntersectionObserver((entries) => {
-        
+
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 if (entry.target.classList.contains("AU-section3-title")) {
@@ -13,12 +13,14 @@ function setAnimations () {
                 if (entry.target.classList.contains("AU-section3-img")) {
                     entry.target.classList.add("AU-section3-img-animation")
                 }
-    
+
             }
         })
     })
-    observer.observe(document.querySelector(".AU-section3-title"))
-    observer.observe(document.querySelector(".AU-section3-info"))
-    observer.observe(document.querySelector(".AU-section3-img"))
+    setTimeout(() => {
+        observer.observe(document.querySelector(".AU-section3-title"))
+        observer.observe(document.querySelector(".AU-section3-info"))
+        observer.observe(document.querySelector(".AU-section3-img"))
+    }, 200);
 
 }
