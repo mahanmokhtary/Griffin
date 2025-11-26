@@ -41,7 +41,7 @@ button:active {
     width: 100%;
     padding: 0px 0px 0px 0px;
     /* background-color: #0145a8; */
-    background-image: linear-gradient(black 40%, white);
+    background: linear-gradient(black 40%, white);
     /* height: 820px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -49,7 +49,7 @@ button:active {
 }
 
 .section1-step1 {
-    background-image: url(/Img/griffinSection1BG.JPG);
+    background-image: url("../Img/griffinSection1BG.JPG");
     background-size: cover;
     /* background-size: contain; */
     background-position: center;
@@ -77,6 +77,7 @@ button:active {
     /* animation-delay: 0.2s; */
     animation-timing-function: linear;
 }
+
 .section1-info-rtl {
     animation-name: section1-info-shine-rtl;
     animation-duration: 1.5s;
@@ -111,7 +112,7 @@ button:active {
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
-    background-image: linear-gradient(90deg, #13befe, #9c33ff);
+    background: linear-gradient(90deg, #13befe, #9c33ff);
     /* background-color: #2d7af7; */
     border: none;
     width: 250px;
@@ -222,7 +223,7 @@ button:active {
     height: 40px;
     font-weight: 500;
     /* background-color: #0145a8; */
-    background-image: linear-gradient(90deg, #13befe, #9c33ff);
+    background: linear-gradient(90deg, #13befe, #9c33ff);
     color: #FFFFFF;
     border: none;
     border-radius: 20px;
@@ -238,7 +239,7 @@ button:active {
 .section3 {
     width: 90%;
     /* background-color: #0145a8; */
-    background-image: linear-gradient(white 5%, black);
+    background: linear-gradient(white 5%, black);
     margin: 30px auto 10px auto;
     padding: 30px 20px 30px 20px;
     border-radius: 20px;
@@ -261,6 +262,14 @@ button:active {
 .product-field-column2 {
     margin-top: 10px;
     font-size: 17px;
+    margin-top: 10px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    height: 100%;
 }
 
 .Products-fields {
@@ -273,7 +282,8 @@ button:active {
     /* height: 500px; */
 }
 
-.product-field-ltr,.product-field-rtl {
+.product-field-ltr,
+.product-field-rtl {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -281,7 +291,7 @@ button:active {
     padding: 20px 20px 20px 20px;
     width: 360px;
     /* height: 220px; */
-    height: 255px;
+    height: 290px;
     background-color: #FFFFFF;
     /* filter: drop-shadow(5px 5px 10px #ac23ff); */
     /* border: 1px solid #2d7af7; */
@@ -308,6 +318,7 @@ button:active {
     opacity: 0;
     transition: all 0.5s 0.1s linear;
 }
+
 .product-field-rtl::after {
     content: "مشاهده بیشتر";
     width: 110px;
@@ -328,6 +339,7 @@ button:active {
     /* box-shadow: 2px 2px 10px 10px #ac23ff; */
     transform: translateY(-10px);
 }
+
 .product-field-rtl:hover {
     box-shadow: 2px 2px 33px 0px black;
     /* box-shadow: 2px 2px 10px 10px #ac23ff; */
@@ -338,12 +350,14 @@ button:active {
     visibility: visible;
     opacity: 1;
 }
+
 .product-field-rtl:hover::after {
     visibility: visible;
     opacity: 1;
 }
 
-.product-field-column1-rtl,.product-field-column1-ltr {
+.product-field-column1-rtl,
+.product-field-column1-ltr {
     height: 100%;
     position: relative;
     display: flex;
@@ -357,24 +371,27 @@ button:active {
     width: 3px;
     height: 100%;
     /* background-color: #ac23ff; */
-    background-image: linear-gradient(#18b8ff, #ac23ff);
+    background: linear-gradient(#18b8ff, #ac23ff);
     left: -11px;
     top: 2px;
 }
+
 .product-field-column1-ltr::after {
     position: absolute;
     content: "";
     width: 3px;
     height: 100%;
     /* background-color: #ac23ff; */
-    background-image: linear-gradient(#18b8ff, #ac23ff);
+    background: linear-gradient(#18b8ff, #ac23ff);
     left: 45px;
     top: 2px;
 }
+
 .product-field-p {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 19px;
 }
+
 .product-field-iconbox {
     font-size: 16px;
 }
@@ -403,6 +420,7 @@ button:active {
     /* font-size: 20px; */
     /* font-weight: 600; */
 }
+
 .section4-info-secend-p {
     text-indent: 10px;
     word-spacing: 2px;
@@ -427,7 +445,7 @@ button:active {
     height: 40px;
     font-weight: 500;
     /* background-color: #0145a8; */
-    background-image: linear-gradient(90deg, #13befe, #9c33ff);
+    background: linear-gradient(90deg, #13befe, #9c33ff);
     color: #FFFFFF;
     border: none;
     border-radius: 20px;
@@ -618,6 +636,7 @@ button:active {
     align-items: center;
     justify-content: center;
 }
+
 .section5-info-uls-griffin-defrences-li-icon {
     height: 30px;
 }
@@ -745,10 +764,12 @@ button:active {
         width: 100%;
     } */
 }
+
 @media (max-width : 892px) {
     .product-field-rtl {
         width: 100%;
     }
+
     .product-field-ltr {
         width: 100%;
     }
@@ -840,14 +861,22 @@ button:active {
 
 }
 
-@media (max-width : 600px) {
+@media (max-width : 530px) {
 
     /* for section 2 */
     .section2-step2-imgbox {
+        font-size: 30px;
         width: 90%;
     }
 
     /* for footer */
+}
+
+@media (max-width : 440px) {
+    .section1-step2-h2 {
+        width: 80%;
+
+    }
 }
 
 @media (max-width : 440px) {

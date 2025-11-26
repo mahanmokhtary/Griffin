@@ -5,15 +5,56 @@ body {
     margin: 0px;
     /* overflow-x: hidden; */
 }
+
+
+/* FONTS */
+
+/* thin */
 @font-face {
     font-family: 'vazir';
-    src: url('../fonts/Vazir.woff2') format("woff2"),url('/fonts/Vazir.woff') format("woff");
+    src: url('../fonts/Vazir-Thin.woff2') format("woff2"), url('/fonts/Vazir-Thin.woff') format("woff");
+    font-weight: 100;
+    font-style: normal;
 }
+
+/* light */
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Vazir-Light.woff2') format("woff2"), url('/fonts/Vazir-Light.woff') format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* medium */
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Vazir-Medium.woff2') format("woff2"), url('/fonts/Vazir-Medium.woff') format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* regular */
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Vazir.woff2') format("woff2"), url('/fonts/Vazir.woff') format("woff");
+
+}
+
+/* bold */
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Vazir-Bold.woff2') format("woff2"), url('/fonts/Vazir-Bold.woff') format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* styles */
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'vazir',vazir;
+    font-family: 'vazir';
 }
 
 p {
@@ -172,7 +213,7 @@ button:active {
     background: linear-gradient(90deg, #13befe, #9c33ff);
     left: 50%;
     transform: translateX(-50%) scale(0%);
-    top: 33px;
+    top: 34px;
     transition: all 0.2s 0.1s ease;
 }
 
@@ -192,6 +233,7 @@ button:active {
         transform: translateX(0px) scale(1);
     }
 }
+
 @keyframes logo-burgermeno-fall {
     0% {
         transform: translateX(0px) scale(1);
@@ -208,8 +250,9 @@ button:active {
 
 
 @media (max-width : 768px) {
+
     /* for header */
-        .logo-burgermeno {
+    .logo-burgermeno {
         display: block;
         margin-top: 50px;
         margin-right: auto;
@@ -256,7 +299,7 @@ button:active {
         position: fixed;
         right: -250px;
         top: 0px;
-        /* bottom: -20px; */
+        bottom: -100px;
         /* background-color: #0a1a4f; */
         background-color: black;
         padding-top: 100px;
@@ -265,7 +308,3 @@ button:active {
         border-bottom-left-radius: 20px;
     }
 }
-
-
-
-
