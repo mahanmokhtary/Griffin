@@ -49,7 +49,7 @@ button:active {
 }
 
 .section1-step1 {
-    background-image: url(../Img/ax.jpg);
+    background-image: url(/Img/griffinSection1BG.JPG);
     background-size: cover;
     /* background-size: contain; */
     background-position: center;

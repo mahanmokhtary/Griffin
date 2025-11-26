@@ -7,7 +7,7 @@ body {
 }
 @font-face {
     font-family: 'vazir';
-    src: url('../fonts/Vazir-Thin.ttf') format("ttf"),url('/fonts/Vazir.woff') format("woff");
+    src: url('../fonts/Vazir.woff2') format("woff2"),url('/fonts/Vazir.woff') format("woff");
 }
 * {
     margin: 0px;
@@ -252,10 +252,11 @@ button:active {
 
     .header .menoes-container {
         width: 250px;
+        height: 100%;
         position: fixed;
         right: -250px;
         top: 0px;
-        bottom: -20px;
+        /* bottom: -20px; */
         /* background-color: #0a1a4f; */
         background-color: black;
         padding-top: 100px;
