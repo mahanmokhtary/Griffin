@@ -56,6 +56,7 @@ button:active {
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     padding: 20px;
+    min-width: 360px;
 }
 
 .section1-step1-bg {
