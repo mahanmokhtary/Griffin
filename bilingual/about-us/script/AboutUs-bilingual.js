@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 function loadLanguage(lang) {
     localStorage.setItem("language", `${lang}`)
     console.log(lang);
-    fetch(`../bilingual/about-us/json/aboutUs-${lang}.Json`)
+    fetch(`../bilingual/about-us/json/AboutUs-${lang}.Json`)
         .then(res => {
             // console.log(res);
             return res.json()
