@@ -86,12 +86,17 @@ body {
     gap: 10%;
 }
 
-.AU-section3-info {
+.AU-section3-info{
     width: 40%;
 }
 
-.AU-section3-info-animation {
-    animation-name: AU-section3-info-animation;
+.AU-section3-info-ltr-animation {
+    animation-name: AU-section3-info-rtl-animation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.AU-section3-info-rtl-animation {
+    animation-name: AU-section3-info-ltr-animation;
     animation-duration: 2s;
     animation-delay: 0s;
 }
@@ -119,6 +124,18 @@ body {
     height: 2px;
     top: 30px;
     right: -5px;
+}
+.AU-section3-info-li-h3-ltr::after {
+    content: "";
+    position: absolute;
+    /* background: linear-gradient(90deg, white 0%, black); */
+    background-color: white;
+    box-shadow: 0px 0px 33px 5px white;
+    width: 20%;
+    height: 2px;
+    top: 30px;
+    left: 5px;
+    
 }
 
 .AU-section3-img {
@@ -228,8 +245,168 @@ body {
     transform: translateX(-50%) translateY(-50px);
 }
 
+/* section5 */
+.AU-section5 {
+    width: 100%;
+    margin: 30px auto;
+    padding: 50px;
+    background: linear-gradient(45deg, black, white, black);
+    border-radius: 50px;
+}
+
+.AU-section5-row1-div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
+.AU-section5-row1-div1-titel {
+    font-size: 35px;
+}
+
+.AU-section5-row1-div1-number {
+    text-decoration: none;
+    color: black;
+}
+
+.AU-section5-row1-div2-titel {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.AU-section5-row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.AU-section5-row2-col1,
+.AU-section5-row2-col2,
+.AU-section5-row2-col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section6 */
+.section6-row1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px auto 50px auto;
+    position: relative;
+}
+
+.section6-row1::after {
+    content: "";
+    /* background-color: #2d7af7; */
+    position: absolute;
+    /* box-shadow: 1px 1px 10px 6px #0145a8; */
+    /* box-shadow: 0px 0px 30px 10px #2d7af7; */
+    background: linear-gradient(90deg, #13befe, #9c33ff);
+    filter: blur(20px);
+    width: 85%;
+    height: 30px;
+    top: 185px;
+
+}
+
+.section6-grifin-honors-99,
+.section6-grifin-honors-98 {
+    position: relative;
+    cursor: grab;
+    width: 150px;
+    height: 200px;
+    transition: all 1s 0.1s linear;
+}
+
+.section6-grifin-honors-99 img,
+.section6-grifin-honors-98 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section6-grifin-honors-99:hover {
+    transform: translateY(-15px);
+}
+
+.section6-grifin-honors-98:hover {
+    transform: translateY(-15px);
+}
+
+.section6-grifin-honors-98::after {
+    opacity: 0;
+    visibility: hidden;
+    content: "The best smart brand in 98";
+    position: absolute;
+    width: 130px;
+    height: 47px;
+    /* background-color: #2d7af7; */
+    background: linear-gradient(to right, rgba(92, 72, 238, 0.6), rgba(15, 30, 106, 0.4));
+    backdrop-filter: blur(30px);
+    /* color: #fff; */
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 20px;
+    top: -59px;
+    right: 5px;
+    /* line-height: 40px; */
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s 0.1s linear;
+}
+
+.section6-grifin-honors-99::after {
+    opacity: 0;
+    visibility: hidden;
+    content: "The best smart brand in 99";
+    position: absolute;
+    width: 130px;
+    height: 47px;
+    background: linear-gradient(to right, rgba(92, 72, 238, 0.6), rgba(15, 30, 106, 0.4));
+    backdrop-filter: blur(30px);
+    color: white;
+    border-radius: 20px;
+    top: -59px;
+    right: 5px;
+    /* line-height: 40px; */
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s 0.1s linear;
+}
+
+.section6-grifin-honors-99:hover::after,
+.section6-grifin-honors-98:hover::after {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.section6-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(-30px);
+}
+.section6-first-h2 {
+    text-align: center;
+}
+.section6-second-h2 {
+    text-align: center;
+
+}
 /* key frames */
 
 
@@ -245,10 +422,23 @@ body {
     }
 }
 
-@keyframes AU-section3-info-animation {
+@keyframes AU-section3-info-rtl-animation {
     0% {
         opacity: 0;
         transform: translateX(200%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+
+    }
+}
+@keyframes AU-section3-info-ltr-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
 
     }
 
@@ -297,5 +487,12 @@ body {
     .AU-section3-content {
         flex-direction: column-reverse;
         gap: 30px;
+    }
+}
+
+/* medias */
+@media (max-width:768px) {
+    .AU-section2 {
+        width: 100%;
     }
 }

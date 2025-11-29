@@ -584,7 +584,13 @@ button:active {
     gap: 20px;
     transform: translateY(-30px);
 }
+.section6-first-h2 {
+    text-align: center;
+}
+.section6-second-h2 {
+    text-align: center;
 
+}
 /* section 6 */
 .section5 {
     width: 90%;
@@ -635,10 +641,10 @@ button:active {
 
 .section5-info-uls-griffin-defrences-li {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .section5-info-uls-griffin-defrences-li-icon {

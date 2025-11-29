@@ -1,0 +1,24 @@
+{
+    "Header-meno-griffin": "خانه",
+    "Header-meno-product": "محصولات",
+    "Header-meno-contactUs": "تماس با ما",
+    "Header-meno-aboutUs": "درباره ما",
+    "Header-meno-project": "پروژه ها",
+
+    "CU-section1-title" : "تماس با ما :",
+    "CU-section1-call1-h3" : "دفتر مرکزی :",
+    "CU-section1-call2-h3" : "کارخانه :",
+    "CU-section1-call3-h3" : "تلفن تماس :",
+    "CU-section1-social-medias-whatsApp" : "ارتباط با ما در واتس اپ",
+    "CU-section1-social-medias-instagram" : "گریفین رو از اینستاگرام دنبال کنید",
+    "CU-section1-address-h3" : "آدرس : کرج - خیابان شهید بهشتی - سه راه گوهر دشت - نبش میثم 8 - برج ایوانلو طبقه 3 - واحد 301",
+
+    "footerColumn1-h3-title": "تماس با ما",
+    "footerColumn1-h6-address": "آدرس : کرج - خیابان شهید بهشتی - سه راه گوهر دشت - نبش میثم 8 - برح ایوانلو - طبقه 3 - واحد 301",
+    "footerColumn1-h6-office": "دفتر مرکزی : ",
+    "footerColumn1-h6-officeNumber": "02634093097",
+    "footerColumn1-h6-company": "کارخانه : ",
+    "footerColumn1-h6-companyNumber": "02634093094",
+    "footerColumn2-social-medias-title": "شبکه های اجتماعی ما",
+    "developerName" : "طراحی و توسعه ماهان بیات مختاری"
+}

@@ -1,0 +1,39 @@
+{
+    "Header-meno-griffin": "Home",
+    "Header-meno-product": "Product",
+    "Header-meno-contactUs": "ContactUs",
+    "Header-meno-aboutUs": "About Us",
+    "Header-meno-project": "Project",
+
+    "AU-section2-h1" : "About Griffin",
+    "AU-section-p" : "Armid Smart Designers Knowledge-Based Company (Private Limited), the producer of digital automation systems under the Griffin brand, is proud to have achieved more than nine years of successful experience in the design, production, and implementation of security and smart automation systems for residential, office, hotel, educational, and industrial environments. The company has taken significant steps toward advancing automation knowledge in the country and fulfilling customer expectations.Since 2010, Armid has relied on the expertise of highly skilled designers, experienced engineers, and national elites, while employing the most advanced analog and digital design methodologies aligned with the latest international industrial electronics technologies. By utilizing high-quality, standard components and equipment, and by focusing on superior after-sales services, the company has successfully attained international standards.",
+    "AU-section3-title" : "Griffins overall operations",
+"AU-section3-info-li-h3-1" : "Engineering design",
+"AU-section3-info-li-h4-1" : "Hardware and software design of all electronic and computer systems with standardized infrastructures tailored to project requirements",
+"AU-section3-info-li-h3-2" : "Production",
+"AU-section3-info-li-h4-2" : "The most advanced and comprehensive suite of wireless automation systems, energy management, and energy-optimization solutions based on international standards",
+"AU-section3-info-li-h3-3" : "implementation",
+"AU-section3-info-li-h4-3" : "Imolementation of specialized applied automation projects through the integration of diverse systems based on project requirements",
+"AU-section3-info-li-h3-4" : "The Griffin",
+"AU-section3-info-li-h4-4" : "The Griffin is a mythical creature that symbolizes power, intelligence, and wisdom",
+
+
+
+
+    "AU-section5-row1-div1-titel" : "Support",
+    "AU-section5-row1-div1-number" : "09120319373",
+    "AU-section5-row1-div2-titel" : "Griffin is avalable twenty for seven to answer your questions",
+    "AU-section5-row2-col1-text" : "Express delivery",
+    "AU-section5-row2-col2-text" : "twenty four seven",
+    "AU-section5-row2-col3-text" : "Genuine product",
+    "section6-first-h2" : "GRIFFIN HONORS",
+    "section6-second-h2" : "BEST SMART BRAND IN 98 & 99",
+        "footerColumn1-h3-title" : "Contact Us",
+    "footerColumn1-h6-address" : "Adress : karaj-shahid.st-gohardasht-borg evano",
+    "footerColumn1-h6-office" : "office : ",
+    "footerColumn1-h6-officeNumber" : "02634093097",
+    "footerColumn1-h6-company" : "company : ",
+    "footerColumn1-h6-companyNumber" : "02634093094",
+    "footerColumn2-social-medias-title": "our social medias",
+    "developerName" : "developed by mahan bayat mokhtari"
+}

@@ -1,14 +1,15 @@
 var canvas = document.getElementById("cvs");
 var ctx = canvas.getContext("2d");
 
-var w = $("#container").width();
-var h = $("#container").height();
-$("canvas").attr("width", w);
-$("canvas").attr("height", h);
-
+// var w = $("#container").width();
+// var h = $("#container").height();
+// $("canvas").attr("width", w);
+// $("canvas").attr("height", h);
+var w = 1400
+var h = 600
 var particles = [];
 var num_particles = 2;
-var maxParticles = 200;
+var maxParticles = 50;
 
 // Generate random color
 function GetRandomColor() {
@@ -62,10 +63,10 @@ var Particle = function() {
 Particle.prototype.Draw = function(ctx, next) {
   switch (this.Color) {
     case 1:
-      ctx.fillStyle = "rgba(40,200,100," + this.alpha + ")";
+      ctx.fillStyle = "rgba(172, 35, 255," + this.alpha + ")";
       break;
     case 2:
-      ctx.fillStyle = "rgba(0,120,125," + this.alpha + ")";
+      ctx.fillStyle = "rgba(24, 184, 255," + this.alpha + ")";
       break;
   }
   ctx.shadowBlur = 25;

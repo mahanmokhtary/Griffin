@@ -8,7 +8,13 @@ function setAnimations() {
                     entry.target.classList.add("AU-section3-title-animation")
                 }
                 if (entry.target.classList.contains("AU-section3-info")) {
-                    entry.target.classList.add("AU-section3-info-animation")
+                    if(document.documentElement.dir == "ltr") {
+                        entry.target.classList.remove("AU-section3-info-ltr-animation")
+                        entry.target.classList.add("AU-section3-info-rtl-animation")
+                    } else {
+                        entry.target.classList.remove("AU-section3-info-rtl-animation")
+                        entry.target.classList.add("AU-section3-info-ltr-animation")
+                    }
                 }
                 if (entry.target.classList.contains("AU-section3-img")) {
                     entry.target.classList.add("AU-section3-img-animation")

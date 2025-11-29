@@ -312,11 +312,11 @@ button:active {
 
     .header .menoes-container {
         width: 250px;
-        height: 100%;
+        height: 100vh;
         position: fixed;
         right: -250px;
         top: 0px;
-        bottom: -100px;
+        /* bottom: -100px; */
         /* background-color: #0a1a4f; */
         background-color: black;
         padding-top: 100px;
