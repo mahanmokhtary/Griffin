@@ -1,0 +1,16 @@
+{
+    "Header-meno-griffin": "Home",
+    "Header-meno-product": "Product",
+    "Header-meno-contactUs": "ContactUs",
+    "Header-meno-aboutUs": "About Us",
+    "Header-meno-project": "Project",
+
+    "footerColumn1-h3-title" : "Contact Us",
+    "footerColumn1-h6-address" : "Adress : karaj-shahid.st-gohardasht-borg evano",
+    "footerColumn1-h6-office" : "office : ",
+    "footerColumn1-h6-officeNumber" : "02634093097",
+    "footerColumn1-h6-company" : "company : ",
+    "footerColumn1-h6-companyNumber" : "02634093094",
+    "footerColumn2-social-medias-title": "our social medias",
+    "developerName" : "developed by mahan bayat mokhtari"
+}
