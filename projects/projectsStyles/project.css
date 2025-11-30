@@ -88,12 +88,21 @@ body {
     height: 40px;
     background-color: #18b8ff;
     color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: none;
     outline: none;
     border-radius: 20px;
+}
+.PRJ-project-intro-content-btn:hover{
+    transform: scale(1.05);
+}
+.PRJ-project-intro-content-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
 }
 
 .paginationNav-container {
@@ -183,7 +192,7 @@ body {
         display: none;
     }
     .paginationNav-container-img2 {
-        width: 400px;
+        width: 100%;
         right: 50%;
         transform: translateX(50%);
     }
