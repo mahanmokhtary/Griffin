@@ -187,6 +187,7 @@ body {
 
 
 /* medias */
+
 @media (max-width : 660px) {
     .paginationNav-container-img1 {
         display: none;
